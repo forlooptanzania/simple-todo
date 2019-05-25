@@ -1,0 +1,18 @@
+.task:hover {
+  background-color: aqua;
+}
+.task-description {
+  color: blue;
+}
+
+.task-time {
+  color: #4b4b4a;
+}
+
+.task-status {
+  color: red;
+}
+
+.task-status-complete {
+  color: green;
+}

@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import TaskList from "./TaskList";
 
+/**
+ * 1. List of tasks
+ * 2. Input field
+ * 3. Task item
+ * 4. Checkbox for marking completion of a task
+ * 5. Strike through a task when we are done with it
+ * 6. Routing here
+ */
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <TaskList />;
 }
 
 export default App;
