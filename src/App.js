@@ -1,26 +1,21 @@
-import React from "react";
-import { Switch, Route, BrowserRouter } from "react-router-dom";
-import TaskList from "./TaskList";
-import WelcomePage from "./WelcomePage";
+import React from 'react';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import TaskListPage from './pages/TaskListPage';
+import WelcomePage from './pages/WelcomePage';
 
-/**
- * 1. List of tasks
- * 2. Input field
- * 3. Task item
- * 4. Checkbox for marking completion of a task
- * 5. Strike through a task when we are done with it
- * 6. Routing here
- */
+import './App.css';
 function App() {
   return (
     <BrowserRouter>
-      {/* here is where you put your navigation bar/menu */}
-      <h1>Nav bar</h1>
-      <Switch>
-        <Route exact path="/" component={WelcomePage} />
-        <Route path="/taskList" component={TaskList} />
-        <Route component={WelcomePage} />
-      </Switch>
+      <div className="app">
+        <nav>
+          <h1 className="nav-title">Simple Todo</h1>
+        </nav>
+        <Switch>
+          <Route exact path="/" component={WelcomePage} />
+          <Route path="/tasks" component={TaskListPage} />
+        </Switch>
+      </div>
     </BrowserRouter>
   );
 }
