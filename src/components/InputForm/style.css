@@ -1,0 +1,21 @@
+.inputform {
+  margin-bottom: 5px;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+button[type='submit'] {
+  width: 100%;
+  background-color: #39375b;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}

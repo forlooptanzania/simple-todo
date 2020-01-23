@@ -1,0 +1,32 @@
+.task {
+  padding: 20px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  overflow: auto;
+}
+
+.task:hover {
+  background-color: #745c97;
+  color: #f8f8f8;
+}
+.task-description {
+  font-size: 1.5em;
+  color: #39375b;
+}
+
+.details {
+  float: left;
+}
+
+.task-time {
+  color: #4b4b4a;
+  float: right;
+}
+
+.task-status {
+  color: #c70d3a;
+}
+
+.task-status-complete {
+  color: #007944;
+}
